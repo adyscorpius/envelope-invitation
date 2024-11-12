@@ -1,10 +1,13 @@
 .App {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f0f0f0; /* Light background to contrast with card */
 }
+
+
 
 .invitation-container {
   display: flex;
@@ -28,4 +31,27 @@
   max-height: calc(100vh - 20px); /* Fit within viewport height */
   
   object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* RSVP Button Styling */
+.rsvp-button {
+  margin-top: 20px; /* Space between card and button */
+  padding: 10px 20px; /* Padding inside the button */
+  
+  background-color: #333; /* Dark grey background */
+  color: #fff; /* White text */
+  
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners */
+  
+  font-size: 16px; /* Font size for text */
+  
+  cursor: pointer; /* Pointer cursor on hover */
+  
+  transition: background-color .3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for RSVP Button */
+.rsvp-button:hover {
+   background-color: #555; /* Slightly lighter grey on hover */
 }
