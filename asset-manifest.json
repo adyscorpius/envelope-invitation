@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/envelope-invitation/static/css/main.a976a74b.css",
-    "main.js": "/envelope-invitation/static/js/main.7802e05e.js",
+    "main.css": "/envelope-invitation/static/css/main.a8686c99.css",
+    "main.js": "/envelope-invitation/static/js/main.090194fa.js",
     "static/js/453.df206b12.chunk.js": "/envelope-invitation/static/js/453.df206b12.chunk.js",
-    "static/media/invite.jpeg": "/envelope-invitation/static/media/invite.29c1c9c445d5957d2b8f.jpeg",
     "index.html": "/envelope-invitation/index.html",
-    "main.a976a74b.css.map": "/envelope-invitation/static/css/main.a976a74b.css.map",
-    "main.7802e05e.js.map": "/envelope-invitation/static/js/main.7802e05e.js.map",
+    "main.a8686c99.css.map": "/envelope-invitation/static/css/main.a8686c99.css.map",
+    "main.090194fa.js.map": "/envelope-invitation/static/js/main.090194fa.js.map",
     "453.df206b12.chunk.js.map": "/envelope-invitation/static/js/453.df206b12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a976a74b.css",
-    "static/js/main.7802e05e.js"
+    "static/css/main.a8686c99.css",
+    "static/js/main.090194fa.js"
   ]
 }
