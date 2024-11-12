@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import invite from 'invite.jpeg';
 
 function App() {
+  const [isOpened, setIsOpened] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpened(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={`envelope ${isOpened ? 'open' : ''}`} onClick={handleOpen}>
+        <div className="flap"></div>
+        <div className="content">
+          <img src={`${process.env.PUBLIC_URL}/invitation.jpg`} alt="Invitation" className={`invitation ${isOpened ? 'spin' : ''}`} />
+        </div>
+      </div>
     </div>
   );
 }
