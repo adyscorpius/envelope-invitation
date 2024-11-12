@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/envelope-invitation/static/css/main.a976a74b.css",
+    "main.js": "/envelope-invitation/static/js/main.e002abc8.js",
+    "static/js/453.df206b12.chunk.js": "/envelope-invitation/static/js/453.df206b12.chunk.js",
+    "static/media/invite.jpeg": "/envelope-invitation/static/media/invite.29c1c9c445d5957d2b8f.jpeg",
+    "index.html": "/envelope-invitation/index.html",
+    "main.a976a74b.css.map": "/envelope-invitation/static/css/main.a976a74b.css.map",
+    "main.e002abc8.js.map": "/envelope-invitation/static/js/main.e002abc8.js.map",
+    "453.df206b12.chunk.js.map": "/envelope-invitation/static/js/453.df206b12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a976a74b.css",
+    "static/js/main.e002abc8.js"
+  ]
+}
