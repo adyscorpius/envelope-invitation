@@ -1,21 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import invite from './invite.jpeg';
 
 function App() {
-  const [isOpened, setIsOpened] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const handleOpen = () => {
-    setIsOpened(true);
-  };
+  // Trigger animation after component mounts
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 500); // Delay to trigger animation
+  }, []);
 
   return (
     <div className="App">
-      <div className={`envelope ${isOpened ? 'open' : ''}`} onClick={handleOpen}>
-        <div className="flap"></div>
-        <div className="content">
-          <img src={`${process.env.PUBLIC_URL}/invite.jpeg`} alt="Invitation" className={`invitation ${isOpened ? 'spin' : ''}`} />
-        </div>
+      <div className={`invitation-container ${isVisible ? 'visible' : ''}`}>
+        <img
+          src={`${process.env.PUBLIC_URL}/invite.jpeg`} 
+          alt="Invitation"
+          className="invitation-card"
+        />
       </div>
     </div>
   );
