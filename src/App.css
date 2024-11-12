@@ -1,22 +1,20 @@
 .App {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0; /* Light background to contrast with card */
+  background-color: #f0f0f0; /* Light background */
+  position: relative; /* Make this container a positioning context */
 }
-
-
 
 .invitation-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   /* Initially hidden with scale(0) */
   transform: scale(0) rotate(0deg);
-  
+
   /* Transition for smooth zoom and spin */
   transition: transform 1.5s ease-in-out;
 }
@@ -29,13 +27,15 @@
 .invitation-card {
   max-width: calc(100vw - 20px); /* Fit within viewport width */
   max-height: calc(100vh - 20px); /* Fit within viewport height */
-  
+
   object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* RSVP Button Styling */
 .rsvp-button {
-  margin-top: 20px; /* Space between card and button */
+  position: absolute; /* Position it at the bottom of .App */
+  bottom: 20px; /* Distance from bottom of screen */
+  
   padding: 10px 20px; /* Padding inside the button */
   
   background-color: #333; /* Dark grey background */
@@ -45,9 +45,9 @@
   border-radius: 5px; /* Rounded corners */
   
   font-size: 16px; /* Font size for text */
-  
+
   cursor: pointer; /* Pointer cursor on hover */
-  
+
   transition: background-color .3s ease-in-out; /* Smooth hover effect */
 }
 
